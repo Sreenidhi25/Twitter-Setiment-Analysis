@@ -94,11 +94,12 @@
     </form>
 
     
+    {% if sentiment %}
     <div class="result">
-        <strong>Input Text:</strong> <br>
-        <strong>Predicted Sentiment:</strong>
+        <strong>Input Text:</strong> {{ text }}<br> 
+        <strong>Predicted Sentiment:</strong> {{ sentiment }}
     </div>
-    
+    {% endif %}
 
     <div class="footer">
         <p>&copy; 2024 Sentiment Analysis Project. All rights reserved.</p>
